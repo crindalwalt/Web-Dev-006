@@ -1,0 +1,51 @@
+
+/* 3: External Css (Recommended for medium or large project) */
+
+p{
+    padding: 2rem;
+    background-color: gray;
+    color: #333;
+    font-weight: bold;
+    font-size: larger;
+    border-radius: .4rem;
+}
+/* Tag Selector */
+a{
+    color: red;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: none;
+}
+/* Id Selector */
+#secondPara{
+    padding: 2rem;
+    background-color: rebeccapurple;
+    color: yellow;
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 5rem;
+}
+/* Class Selector */
+.para{
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+}
+
+.bg-pic{
+    background-image: url("https://plus.unsplash.com/premium_photo-1666874442994-d360ade2f3b0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    
+}
+
+.text-white{
+    color: yellow;
+}
+
+a,button{
+    border: none;
+    padding: 1rem 2rem;
+    background-color: gold;
+    color: black;
+    border-radius: .3rem;
+    box-shadow: 12px 12px black;
+}
