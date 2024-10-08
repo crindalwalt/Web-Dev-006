@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Flexbox</title>
+    <style>
+        /* 
+        Block               |   Inline
+        box modal present   | box modal not completly present
+        css achi apply      | css achi apply ni hoti
+        take full space     | take neccessory space
+        
+        
+        
+        
+        */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .container{
+            height: 100vh;
+            background-color: darkkhaki;
+            padding: .5rem;
+
+            display: flex;
+            justify-content: center ;
+            align-items: center;
+        }
+        .dabba{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            margin: .5rem;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            
+        }
+        .box{
+            background-color: red;
+            margin: 1rem;
+            padding: 1rem;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: block;
+            /* the display which take all available space from start to end */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- display -->
+     <!-- <div class="container">
+        <div class="box">a</div>
+        <div class="box">b</div>
+        <div class="box">c</div>
+        <div class="box">d</div>
+        <span class="box">e</span>
+        <button class="box">Click me</button>
+        <h1 class="box">F</h1>
+        <p class="box">G</p>
+        <a class="box" href="https://shahzadfarooq.com">Go to Shahzad Farooq</a>
+     </div> -->
+
+
+
+     <div class="container">
+        <div class="dabba" id="box-1">Box 1</div>
+        <!-- <div class="dabba" id="box-2">Box 2</div>
+        <div class="dabba" id="box-3">Box 3</div>
+        <div class="dabba" id="box-4">Box 4</div>
+        <div class="dabba" id="box-5">Box 5</div> -->
+     </div>
+</body>
+</html>
