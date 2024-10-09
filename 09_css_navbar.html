@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .navbar{
+            background-color: skyblue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .5rem 1rem;
+
+        }
+        .navigation ul{
+            display: flex;
+        }
+        .navigation ul li{
+            list-style: none;
+            padding: 1rem;
+        }
+        .navigation ul li:hover{
+            background-color: #3b3b3b96;
+            color: white;
+            border-radius: 1rem;
+            
+        }
+        .navigation ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        .cta button{
+            padding: .7rem 1.2rem;
+            border: none;
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            border-radius: .4rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="brand">
+            <h2>
+                Google
+            </h2>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Courses</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cta">
+            <button>Whatsapp</button>
+        </div>
+    </div>
+</body>
+</html>
