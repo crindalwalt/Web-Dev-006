@@ -1,82 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navbar</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* ================================ Navbar */
 
-        }
+      .navbar {
+        background-color: skyblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 1rem;
+      }
+      .navigation ul {
+        display: flex;
+      }
+      .navigation ul li {
+        list-style: none;
+        padding: 1rem;
+      }
+      .navigation ul li:hover {
+        background-color: #3b3b3b96;
+        color: white;
+        border-radius: 1rem;
+      }
+      .navigation ul li a {
+        text-decoration: none;
+        color: black;
+      }
+      .cta button {
+        padding: 0.7rem 1.2rem;
+        border: none;
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        border-radius: 0.4rem;
+        cursor: pointer;
+      }
+      /* =====================   Hero Section */
+      .hero-section {
+        display: flex;
+        padding: 3rem 4rem;
 
-        .navbar{
-            background-color: skyblue;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: .5rem 1rem;
-
-        }
-        .navigation ul{
-            display: flex;
-        }
-        .navigation ul li{
-            list-style: none;
-            padding: 1rem;
-        }
-        .navigation ul li:hover{
-            background-color: #3b3b3b96;
-            color: white;
-            border-radius: 1rem;
-            
-        }
-        .navigation ul li a{
-            text-decoration: none;
-            color: black;
-        }
-        .cta button{
-            padding: .7rem 1.2rem;
-            border: none;
-            background-color: green;
-            color: white;
-            font-weight: bold;
-            border-radius: .4rem;
-            cursor: pointer;
-        }
+        background-color: #8ec5fc;
+        background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+      }
+      .side{
+        width: 50%;
+      }
+      .image-side{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .image-side img {
+        width: 500px;
+        height: auto;
+      }
+      .content-side {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .content h1 {
+        margin: 1.5rem 0rem;
+        font-size: 50px;
+      }
+      .content p {
+        margin: 1rem 0rem;
+      }
+      .content .hero-buttons {
+        margin: 1rem 0rem;
+      }
+      .content .hero-buttons button {
+        padding: 0.7rem 1.2rem;
+        border: none;
+        border: 2px solid gray;
+        border-radius: 0.3rem;
+        background-color: lightseagreen;
+        color: white;
+        font-weight: bold;
+        margin-right: 1rem;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.719);
+      }
+      .c-primary {
+        color: lightseagreen;
+        font-weight: bold;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="navbar">
-        <div class="brand">
-            <h2>
-                Google
-            </h2>
-        </div>
-        <div class="navigation">
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Courses</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-                <li>
-                    <a href="#">Blog</a>
-                </li>
-            </ul>
-        </div>
-        <div class="cta">
-            <button>Whatsapp</button>
-        </div>
+      <div class="brand">
+        <h2>Google</h2>
+      </div>
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Courses</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <div class="cta">
+        <button>Whatsapp</button>
+      </div>
     </div>
-</body>
+
+    <div class="hero-section">
+      <div class="content-side side">
+        <div class="content">
+          <h1>Welcome to our <span class="c-primary">website</span></h1>
+
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
+            porro!
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+            doloribus in sapiente distinctio sunt soluta consectetur itaque
+            optio quis mollitia possimus necessitatibus repudiandae repellat
+            quas aliquam similique nisi deserunt sit?
+          </p>
+          <div class="hero-buttons">
+            <button>Login</button>
+            <button>Register</button>
+          </div>
+        </div>
+      </div>
+      <div class="image-side side">
+        <!-- https://cdn.prod.website-files.com/64c73d04a946980a4476537e/64d457148454ba4abb0f6f60_Waiting.svg -->
+        <img src="assets/hero.svg" alt="not found" />
+      </div>
+    </div>
+  </body>
 </html>
