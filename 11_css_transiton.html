@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Transition</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: red;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 50%;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            cursor: pointer;
+            /*transition-property: all;*/
+
+            /*transition-duration: .5s;*/
+            /*transition-delay: 2s;*/
+            /*transition-timing-function: ease-in;*/
+
+            transition: all .5s ease-in;
+
+            /*animation-name: gradientGala;*/
+            animation-name: rotate;
+            /*animation-delay: 5s;*/
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+            animation-play-state: running;
+
+
+        }
+
+        @keyframes gradientGala {
+            /*from{*/
+            /*    background-color: #970fff;*/
+
+            /*}*/
+            /*to{*/
+            /*    background-color: #f88400;*/
+
+
+            /*}*/
+
+
+            1%{
+                background-color: #970fff;
+                transform: translateX(0) scale(1);
+            }
+            25%{
+                background-color: #0fffdb;
+                transform: translateX(50px) scale(1.2);
+            }
+            50%{
+                background-color: #67ff0f;
+                transform: translateX(100px) scale(1.4);
+            }
+            75%{
+                background-color: #67ff0f;
+                transform: translateX(50px) scale(1.2);
+            }
+            100%{
+                background-color: #ff0f0f;
+                transform: translateX(0) scale(1);
+
+            }
+        }
+
+        @keyframes rotate {
+            1%{
+                background-color: #970fff;
+                transform: rotate(0deg) scale(1);
+            }
+            25%{
+                background-color: #0fffdb;
+                transform: rotate(90deg) scale(1.2);
+            }
+            50%{
+                background-color: #67ff0f;
+                transform: rotate(180deg) scale(1.4);
+            }
+            75%{
+                background-color: #67ff0f;
+                transform: rotate(90deg) scale(1.2);
+            }
+            100%{
+                background-color: #ff0f0f;
+                transform: scale(0deg) scale(1);
+
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+        <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
+        <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
+    </svg></div>
+</div>
+</body>
+</html>
