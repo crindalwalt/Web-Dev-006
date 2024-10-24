@@ -91,7 +91,8 @@ header .top-header {
 }
 .inner-flash-sale{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: start;
     align-items: center;
 }
 .flash-sale-card {
@@ -137,4 +138,42 @@ header .top-header {
   );
   color: white;
   font-weight: bold;
+}
+
+
+/* ==================================== Categories Section */
+.inner-categories{
+  display: flex;
+  flex-wrap: wrap;
+}
+.category-card{
+  --cat-card-width: 200px;
+  width: var(--cat-card-width);
+  height: var(--cat-card-width);
+  background-color: gainsboro;
+  /* border: 2px solid gray; */
+  box-shadow: 3px 3px 10px rgba(59, 59, 59, 0.596);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: .6rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.category-card:hover{
+  transform: scale(1.1);
+}
+.category-card:active{
+  transform: scale(0.9);
+}
+.category-card img{
+  width: calc(var(--cat-card-width) - 60px);
+}
+.category-card p{
+  padding: .5rem;
 }

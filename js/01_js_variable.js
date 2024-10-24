@@ -16,7 +16,7 @@ const PI = 3.1415;
 console.log(PI)
 // PI = 4.22
 
-
+let isMarried = false;
 let num1 = 40;
 let num2 = 6;
 let result = num1 - num2;
