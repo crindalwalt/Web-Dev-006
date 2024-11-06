@@ -37,3 +37,32 @@ while (index < allPara.length) {
 
 // allPara[1].style.border = "3px solid red"
 // allPara[2].style.border = "3px solid red"
+// let myButton = document.getElementById("btn");
+// console.log(myButton)
+
+// myButton.style.backgroundColor = "seagreen";
+// myButton.style.color = "white"
+// myButton.style.padding = "1rem"
+// myButton.style.margin = "1rem"
+// myButton.innerHTML = "Dont Click me"
+
+
+
+
+// let myPara = document.getElementsByClassName("para");
+// console.log(myPara)
+// myPara[1].style.backgroundColor = "red"
+
+
+
+// let myPara = document.getElementsByTagName("h1");
+// console.log(myPara)
+// myPara[0].style.color = "yellow";
+
+
+// let myElement = document.querySelector("#btn");
+// console.log(myElement)
+// myElement.style.color = "yellow"
+
+// let qsAll = document.querySelectorAll(".para");
+// console.log(qsAll)
