@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+:root{
+    --primary-color: #1b4965 ;
+    --secondary-color : #62b6cb;
+    --tertiary-color: #5fa8d3;
+    --background-color: #bee9e8;
+    --dark-color: #333333;
+
+}
+.brand h1,.heading h3{
+    font-family: "Merriweather", serif !important;
+}
+#navbar{
+    padding: 1rem;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.themes {
+    display: flex;
+}
+
+.theme-box{
+    --box-side : 28px;
+    width: var(--box-side);
+    height: var(--box-side);
+    border-radius: .5rem;
+    margin: .5rem;
+    border: 3px solid transparent;
+    cursor: pointer;
+}
+.theme-active{
+    border: 3px solid white;
+}
+#theme-1{
+    background-color: var(--secondary-color);
+}
+#theme-2{
+    background-color: seagreen;
+}
+#theme-3{
+    background-color: blueviolet;
+}
+
+/* ============ Container */
+
+.container{
+    background-color: var(--background-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.heading{
+    margin: 2rem 0rem;
+    font-size: x-large;
+}
+.inner-container{
+    width: 50%;
+    margin: 2rem 0rem;
+
+}
+
+.todo-item{
+    margin: 1rem 0rem;
+    border: 3px solid transparent;
+    background-color: var(--secondary-color);
+    border-radius: .4rem;
+    padding: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    /* align-items: center; */
+
+}
+.todo-heading{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .7rem;
+}
+.checkbox{
+    padding: .5rem;
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+    margin-top: .3rem;
+    accent-color: var(--primary-color);
+}
+.todo-item:hover{
+    border: 3px solid var(--primary-color);
+}
+.faded{
+    color: var(--dark-color);
+    margin-right: 1rem;
+}
